@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="top: 0px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="Anasayfa.html"><img src="img/Logo.gif" alt="" style="width: 50px; height: 50px;"></a>
+
+                    <a href="Anasayfa.html" class="navbar-brand">
+                        <strong>XELAT</strong>AKSOY
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggler" data-target="#navbarMenu" data-toggle="collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav justify-content-end w-100" style="font-size: 20px;">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" id="nav-link">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#hakkımda" class="nav-link" id="nav-link">Hakkımda</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="nav-link">
+                                Sosyal Medya
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/halat-aksoy-699177202/" target="_blank">Linkedin</a>
+                                <a class="dropdown-item" href="https://github.com/halataksoy" target="_blank">Github</a>
+                                <a class="dropdown-item" href="mailto:halat.aksoy2000@gmail.com" target="_blank">Gmail</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="WebTasarimYazilim.html" class="nav-link" id="nav-link">Web Tasarım ve Yazılım</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="container-fluid iletisim">
+        <section>
+            <div class="email__container">
+                <form action="">
+                    <h3>İLETİŞİME GEÇİN</h3>
+                    <div class="email__group">
+                        <label for="firstName"> Adınız</label>
+                        <input type="text" id="firstName" name="firstName" />
+                    </div>
+                    <div class="email__group">
+                        <label for="surName"> Soyadınız</label>
+                        <input type="text" id="surName" name="surName" />
+                    </div>
+                    <div class="email__group">
+                        <label for="phoneNumber"> Telefon Numarası</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" />
+                    </div>
+                    <div class="email__group">
+                        <label for="email"> Email Adresi</label>
+                        <input type="email" id="email" name="email" />
+                    </div>
+                    <div class="email__group">
+                        <label for="msgBox"> Mesajınız</label>
+                        <textarea id="msgBox" name="msgBox"></textarea>
+                    </div>
+
+                    <input type="button" onclick="sendEmailFromForm()" value="Gönder!" />
+                </form>
+            </div>
+            <div id="SenderStatus" class="success">Success</div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="contact.js"></script>
+    <footer class="footer py-3 bg-dark">
+        <div class="container-fluid text-white bg-dark">
+            <div class="row">
+                <div class="col-md-4 footer-1">
+
+                    <ul style="cursor: pointer;   list-style-type: none; line-height: 2rem;">
+                        <li><a href="Anasayfa.html">Anasayfa</a></li>
+                        <li><a href="Anasayfa.html" type="html/id">Hakkımda</a></li>
+                        <li><a href="Anasayfa.html">Sosyal Medya</a></li>
+                        <li><a href="WebTasarimYazilim.html">Web Tasarım ve Yazılım</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <caption>Sosyal Medya Hesaplarım</caption>
+                    <ul style="cursor: pointer; list-style-type: none; line-height: 5rem;" class="d-block">
+                        <a href="https://www.linkedin.com/in/halat-aksoy-699177202/" target="_blank"><i
+                                class="fab fa-linkedin fa-lg fa-2x" ></i></a>
+                        <a href="https://github.com/halataksoy" target="_blank"><i class="fab fa-github fa-lg fa-2x"></i></a>
+                        <a href="mailto:halat.aksoy2000@gmail.com" target="_blank"><i class="far fa-envelope fa-lg fa-2x" ></i></a>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <caption>Faaliyetler</caption>
+                    <ul style="cursor: pointer;   list-style-type: none; line-height: 2rem;">
+                        <li><a href="">Web Tasarım Ve Yazılım</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <p class="text-center">© XELATAKSOY 2021. TÜM HAKLARI SAKLIDIR.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+</body>
+
+</html>
